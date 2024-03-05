@@ -1,0 +1,60 @@
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 6px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 30px;
+  border: 1px solid #d901fc;
+}
+
+.projects-carousel .slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  border-radius: 30px;
+  display: block;
+  width: 20px;
+  height: 100%;
+  border-radius: 30px;
+  padding: 0 !important;
+  cursor: pointer;
+  /* color: transparent; */
+  border: 0;
+  outline: none;
+  /* background: transparent; */
+}
+.projects-carousel .slick-dots li.slick-active button {
+  background: #3520e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3520e6,
+    #d901fc
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3520e6, #d901fc);
+  padding: 0;
+  width: 100% !important;
+  border: none !important;
+}
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "" !important;
+  text-align: center;
+  opacity: 0.25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.projects-carousel .slick-dots li.slick-active {
+  width: 50px !important;
+}
